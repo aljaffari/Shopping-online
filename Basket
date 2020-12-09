@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Shoppingonlin
+{
+    public static void main(String a[])
+    	 {
+        Scanner scnr = new Scanner(System.in);
+        System.out.println(" ^-^-^-< Welcome to online shopping >-^-^-^ ");  
+        System.out.println("Enter the number of item in the shopping basket: "); 
+        int item = scnr.nextInt(); //Input statements 
+        if(item == 0) //Conditional statement  
+        	{
+            System.out.println("Your shopping basket is empty!!"); 
+        }
+        else 
+        	{
+            int arr[] = new int[item]; 
+            int receipt = 0; // Declaration of variables 
+            System.out.println("Enter price of every item in the shopping basket: "); 
+            for (int i = 0; i < item; i++) //Loop statement 
+            	 {
+                arr[i] = scnr.nextInt(); 
+                receipt += arr[i]; //Processing/Arithmetical calculation 
+            } 
+            System.out.print("Total amount of the bill is: "+receipt +" OMR!"); //Output statements 
+        }
+    }
+} 
