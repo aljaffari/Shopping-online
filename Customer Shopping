@@ -16,5 +16,12 @@ class Shoppingonlin
             int arr[] = new int[item]; 
             int receipt = 0; // Declaration of variables 
             System.out.println("Enter price of every item in the shopping basket: "); 
+             for (int i = 0; i < item; i++) //Loop statement 
+            	 {
+                arr[i] = scnr.nextInt(); 
+                receipt += arr[i]; //Processing/Arithmetical calculation 
+            } // Node (13)
+            System.out.print("Total amount of the bill is: "+receipt +" OMR!"); //Output statements 
+        }
     }
 } 
